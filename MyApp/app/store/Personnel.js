@@ -5,7 +5,7 @@ Ext.define('MyApp.store.Personnel', {
     storeId: 'personnel',
     // autoLoad: true,
    fields: [
-       'id','name','belt', 'special_power','created_at','updetd_at'
+       'id','name','belt', 'special_power','created_at','updated_at'
    ],
     proxy: {
         type: 'jsonp',

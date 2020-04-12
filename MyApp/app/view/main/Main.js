@@ -29,21 +29,45 @@ Ext.define('MyApp.view.main.Main', {
             docked: 'top',
             xtype: 'toolbar',
             items:[
-                {   xtype: 'button',
-                    text: 'Read',
-                    ui: 'action',
-                    scope: this,
-                    listeners:{
-                    tap:'onReadClicked'
-                    }
-                }
+                    {   xtype: 'button',
+                        text: 'Read',
+                        ui: 'action',
+                        scope: this,
+                        listeners:{
+                        tap:'onReadClicked'
+                        }
+                    },
+                       
+                    {        
+                        text: 'Add',
+                        iconCls: 'fa-plus',
+                        handler: 'onAddClick'
+                        
+                    },
+                    {
+                        itemId: 'removeSport',
+                        text: 'Remove',
+                        iconCls: 'fa-times',
+                        reference: 'btnRemoveSport',
+                        handler: 'onRemoveClick',
+                        disabled: true
+                        }
             ]
 
         },
-
-
-
-
+    // tbar: [{
+    //         text: 'Add Sport',
+    //         iconCls: 'fa-plus',
+    //         handler: 'onAddClick'
+    //         },{
+    //         itemId: 'removeSport',
+    //         text: 'Remove Student',
+    //         iconCls: 'fa-times',
+    //         reference: 'btnRemoveSport',
+    //         handler: 'onRemoveClick',
+    //         disabled: true
+    //         }],
+                    
         // TODO - Replace the content of this view to suit the needs of your application.
         {
             title: 'Home',

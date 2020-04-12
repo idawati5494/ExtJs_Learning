@@ -2,6 +2,7 @@ Ext.define('MyApp.model.Personnel', {
     extend: 'MyApp.model.Base',
 
     fields: [
-        'name', 'email', 'phone'
-    ]
+        'id', 'name', 'belt', 'special_power', 'created_at', 'updated_at'
+    ],
+    
 });
